@@ -37,7 +37,7 @@ function gerarNotas() {
 
     // 2. Fluxo de verificação baseado na flag erroVazio
     if (erroVazio) {
-        alert("errado: preencha todos os campos ativos");
+        alert("Preencha todos os campos ativos");
 
         limparCampos("notaB");
         limparCampos("notaP");
@@ -45,7 +45,7 @@ function gerarNotas() {
         limparCampos("notaQt");
 
     } else {
-        // Realiza o cálculo com segurança convertendo para número
+        // Realiza o cálculo convertendo para número
         let notaFinal = (Number(nB) + Number(nP) + Number(nQl) + Number(nQt)) / 4;
 
         alert("Média final: " + notaFinal);
@@ -57,7 +57,8 @@ function gerarNotas() {
     }
 }
 
-// Funções básicas de suporte
+// Funções básicas
+
 function limparCampos(id) {
     // Garante que o elemento existe antes de tentar limpar para evitar erros
     const elemento = document.getElementById(id);

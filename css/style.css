@@ -10,15 +10,17 @@ body {
 
 #SINotas {
     margin-top: 30vh;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
 
-    background-color: brown;
+    background-color: rgb(218, 97, 97);
     padding: 10px;
     border-radius: 10px;
 
     gap: 5px;
+
 }
 
 #notas {
@@ -26,4 +28,27 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 5px;
+}
+
+.bntGeral {
+    width: 100px;
+    height: 30px;
+    
+    align-self: center;
+
+    user-select: none;
+
+    background-color: black;
+    border-color: white;
+    color: white;
+
+    transition: 0.3s ease;
+}
+
+.bntGeral:hover {
+    transform: scale(1.1);
+}
+
+.bntGeral:active {
+    transform: scale(0.9);
 }
