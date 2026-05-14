@@ -9,35 +9,37 @@
 
 <body>
 
+    
     <section id="SINotas">
+        
+        <h1>Media Bimestral</h1>
         
         <div id="notas">
 
             <div>
                 <input type="checkbox" id="checkNB">
                 <Label for="notaB">Nota Bimestral: </Label>
-                <input type="number" id="notaB" class="inputNotas">
+                <input type="number" id="notaB" class="inputNotas" placeholder="1 a 10" min="0" max="10" oninput="if (this.value > 10) this.value = 10;">
             </div>
             <div>
                 <input type="checkbox" id="checkNP">
                 <Label for="notaP">Nota Parcial: </Label>
-                <input type="number" id="notaP" class="inputNotas">
+                <input type="number" id="notaP" class="inputNotas" placeholder="1 a 10" min="0" max="10" oninput="if(this.value > 10) this.value = 10;">
             </div>
             <div>
                 <input type="checkbox" id="checkNQl">
                 <Label for="notaQl">Nota Qualitativa: </Label>
-                <input type="number" id="notaQl" class="inputNotas">
+                <input type="number" id="notaQl" class="inputNotas" placeholder="1 a 10" min="0" max="10" oninput="if(this.value > 10) this.value = 10;">
             </div>
             <div>
                 <input type="checkbox" id="checkNQt">
                 <Label for="notaQt">Nota Quantitativa: </Label>
-                <input type="number" id="notaQt" class="inputNotas">
+                <input type="number" id="notaQt" class="inputNotas" placeholder="1 a 10" min="0" max="10" oninput="if(this.value > 10) this.value = 10;">
             </div>
             
         </div>
 
         <button class="bntGeral" onclick="gerarNotas()">Calcular</button>
-        <button class="bntGeral" onclick="teste()">teste</button>
 
     </section>
 

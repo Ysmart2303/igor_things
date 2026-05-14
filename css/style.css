@@ -4,23 +4,26 @@
 
 body {
     background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
 }
 
 #SINotas {
+    margin-top: 30vh;
     display: flex;
+    justify-content: center;
     flex-direction: column;
+
+    background-color: brown;
+    padding: 10px;
+    border-radius: 10px;
+
+    gap: 5px;
 }
 
 #notas {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-}
-
-.bntGeral {
-    width: 100px;
-    height: 25px;
-}
-
-.inputNotas {
-    width: 100px;
+    gap: 5px;
 }
