@@ -1,1 +1,48 @@
-bb
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section id="SINotas">
+        
+        <div id="notas">
+
+            <div>
+                <input type="checkbox" id="checkNB">
+                <Label for="notaB">Nota Bimestral: </Label>
+                <input type="number" id="notaB" class="inputNotas">
+            </div>
+            <div>
+                <input type="checkbox" id="checkNP">
+                <Label for="notaP">Nota Parcial: </Label>
+                <input type="number" id="notaP" class="inputNotas">
+            </div>
+            <div>
+                <input type="checkbox" id="checkNQl">
+                <Label for="notaQl">Nota Qualitativa: </Label>
+                <input type="number" id="notaQl" class="inputNotas">
+            </div>
+            <div>
+                <input type="checkbox" id="checkNQt">
+                <Label for="notaQt">Nota Quantitativa: </Label>
+                <input type="number" id="notaQt" class="inputNotas">
+            </div>
+            
+        </div>
+
+        <button class="bntGeral" onclick="gerarNotas()">Calcular</button>
+        <button class="bntGeral" onclick="teste()">teste</button>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
