@@ -73,3 +73,19 @@ function ativarCheckboxis() {
     document.getElementById("checkNQl").checked = true;
     document.getElementById("checkNQt").checked = true;
 }
+
+// mostar
+
+function mostrarTela(telaId) {
+  const telas = ["base", "nAnual"];
+
+  telas.forEach(id => {
+    const el = document.getElementById(id);
+    el.classList.add("hidden"); // esconde todas
+  });
+
+  document.getElementById(telaId).classList.remove("hidden"); // mostra só uma
+
+  erro.textContent = "";
+  erroRE.textContent = "";
+}

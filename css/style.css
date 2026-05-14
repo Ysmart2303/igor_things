@@ -4,12 +4,24 @@
 
 body {
     background-color: antiquewhite;
+
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
-#SINotas {
+h1 {
+    text-align: center;
+}
+
+#base, #nAnual {
+    border: solid white;
+
     margin-top: 30vh;
+    width: 250px;
+    height: auto;
 
     display: flex;
     justify-content: center;
@@ -21,6 +33,10 @@ body {
 
     gap: 5px;
 
+}
+
+#base p, #nAnual {
+    text-align: center;
 }
 
 #notas {
@@ -51,4 +67,13 @@ body {
 
 .bntGeral:active {
     transform: scale(0.9);
+}
+
+.botoess {
+    display: flex;
+    gap: 10px;
+}
+
+.hidden {
+  display: none !important;
 }
